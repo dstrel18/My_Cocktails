@@ -2,4 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="text_my_cocktails">#313131</color>
+    <color name="text_add">#79747E</color>
+    <color name="blue">#4B97FF</color>
 </resources>

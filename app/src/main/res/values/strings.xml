@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">My Cocktails</string>
+    <string name="my_cocktails">My cocktails</string>
+    <string name="add_your_first_cocktail">Add your first cocktail here</string>
 </resources>

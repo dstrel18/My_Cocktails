@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="text_my_cocktails">36sp</dimen>
+    <dimen name="text_add">16sp</dimen>
+    <dimen name="name_text_cocktail">14sp</dimen>
+</resources>
