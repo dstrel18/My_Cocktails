@@ -3,4 +3,5 @@
     <string name="app_name">Мои Коктейли</string>
     <string name="my_cocktails">Мои Коктейли</string>
     <string name="add_your_first_cocktail">Добавьте сюда свой первый коктейль</string>
+    <string name="edit">Редактировать</string>
 </resources>
