@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.mycocktails.R
+import dagger.hilt.android.AndroidEntryPoint
+
 
 class InfoCocktailsFragment : Fragment() {
     override fun onCreateView(
