@@ -3,7 +3,30 @@
     <style name="Base.Theme.MyCocktails" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">@android:color/white</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
     </style>
 
     <style name="Theme.MyCocktails" parent="Base.Theme.MyCocktails" />
+
+
+    <style name="name_info_cocktails">
+        <item name="android:textSize">@dimen/tex_name_info_cocktail</item>
+        <item name="android:textColor">@color/text_my_cocktails</item>
+        <item name="font">@font/didact</item>
+    </style>
+
+    <style name="description_tv">
+        <item name="android:textSize">@dimen/text_add</item>
+        <item name="textFillColor">@color/text_my_cocktails</item>
+        <item name="font">@font/didact</item>
+
+    </style>
+
 </resources>
+
+
+
+

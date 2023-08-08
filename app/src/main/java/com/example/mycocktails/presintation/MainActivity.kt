@@ -1,8 +1,11 @@
-package com.example.mycocktails
+package com.example.mycocktails.presintation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.mycocktails.R
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

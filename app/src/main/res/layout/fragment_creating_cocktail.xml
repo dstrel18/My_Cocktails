@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".editing_screen.CreatingCocktailFragment">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:src="@drawable/photo_add"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/title_ET"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/input_field_shape"
+            android:padding="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <TextView
+            android:id="@+id/text_title_TV"
+            style="@style/description_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:background="@color/white"
+            android:text="@string/title"
+            app:layout_constraintBottom_toTopOf="@+id/title_ET"
+            app:layout_constraintStart_toStartOf="@+id/title_ET"
+            app:layout_constraintTop_toTopOf="@+id/title_ET" />
+
+        <TextView
+            android:id="@+id/add_title_TV"
+            style="@style/description_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/white"
+            android:text="@string/add_title"
+            app:layout_constraintStart_toStartOf="@+id/title_ET"
+            app:layout_constraintTop_toBottomOf="@+id/title_ET" />
+
+        <EditText
+            android:id="@+id/description_ET"
+            android:layout_width="0dp"
+            android:layout_height="156dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/input_field_shape"
+            android:padding="4dp"
+            app:layout_constraintEnd_toEndOf="@+id/title_ET"
+            app:layout_constraintStart_toStartOf="@+id/title_ET"
+            app:layout_constraintTop_toBottomOf="@+id/add_title_TV" />
+
+        <TextView
+            android:id="@+id/text_description_TV"
+            style="@style/description_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:background="@color/white"
+            android:text="@string/description"
+            app:layout_constraintBottom_toTopOf="@+id/description_ET"
+            app:layout_constraintStart_toStartOf="@+id/description_ET"
+            app:layout_constraintTop_toTopOf="@+id/description_ET" />
+
+        <TextView
+            android:id="@+id/optional_field_TV"
+            style="@style/description_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/white"
+            android:text="@string/optional_field"
+            app:layout_constraintStart_toStartOf="@+id/description_ET"
+            app:layout_constraintTop_toBottomOf="@+id/description_ET" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/imageList"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintStart_toStartOf="@+id/description_ET"
+            app:layout_constraintTop_toBottomOf="@+id/optional_field_TV"
+            tools:itemCount="1"
+            tools:listitem="@layout/item_ingridient_creation" />
+
+        <ImageView
+            android:id="@+id/btm_add_ingredient_BV"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/group_1"
+            app:layout_constraintBottom_toBottomOf="@+id/imageList"
+            app:layout_constraintStart_toEndOf="@+id/imageList"
+            app:layout_constraintTop_toTopOf="@+id/imageList" />
+
+        <EditText
+            android:id="@+id/recipe_ET"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/input_field_shape"
+            android:padding="4dp"
+            app:layout_constraintEnd_toEndOf="@+id/description_ET"
+            app:layout_constraintStart_toStartOf="@+id/description_ET"
+            app:layout_constraintTop_toBottomOf="@+id/btm_add_ingredient_BV" />
+
+        <TextView
+            android:id="@+id/text_recipe_TV"
+            style="@style/description_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:background="@color/white"
+            android:text="Recipe"
+            app:layout_constraintBottom_toTopOf="@+id/recipe_ET"
+            app:layout_constraintStart_toStartOf="@+id/recipe_ET"
+            app:layout_constraintTop_toTopOf="@+id/recipe_ET" />
+
+        <TextView
+            android:id="@+id/optional_view"
+            style="@style/description_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/white"
+            android:text="@string/optional_field"
+            app:layout_constraintStart_toStartOf="@+id/recipe_ET"
+            app:layout_constraintTop_toBottomOf="@+id/recipe_ET" />
+
+        <Button
+            android:id="@+id/save"
+            style="@style/Widget.MaterialComponents.Button.BottomStyle"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_margin="15dp"
+            android:text="@string/save"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/optional_view" />
+
+        <Button
+            android:id="@+id/cancel"
+            style="@style/Widget.MaterialComponents.Button.BottomStyleCancel"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:text="@string/cancel"
+
+            app:layout_constraintEnd_toEndOf="@+id/save"
+            app:layout_constraintStart_toStartOf="@+id/save"
+            app:layout_constraintTop_toBottomOf="@+id/save" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
