@@ -4,4 +4,15 @@
     <string name="my_cocktails">Мои Коктейли</string>
     <string name="add_your_first_cocktail">Добавьте сюда свой первый коктейль</string>
     <string name="edit">Редактировать</string>
+    <string name="recipe">Рецепт:</string>
+    <string name="title">Заголовок</string>
+    <string name="add_title">Добавить заголовок</string>
+    <string name="optional_field">Необязательное поле</string>
+    <string name="description">Описание</string>
+    <string name="save">Сохранить</string>
+    <string name="cancel">Отменить</string>
+    <string name="add_ingredient">Добавить ингредиент</string>
+    <string name="ingredient">Ингредиент</string>
+    <string name="add">Добавить</string>
+
 </resources>

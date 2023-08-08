@@ -8,12 +8,11 @@
 
     <TextView
         android:id="@+id/textView"
+        style="@style/name_info_cocktails"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="47dp"
         android:text="@string/my_cocktails"
-        android:textColor="@color/text_my_cocktails"
-        android:textSize="@dimen/text_my_cocktails"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
