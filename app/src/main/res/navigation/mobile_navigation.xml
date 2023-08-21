@@ -8,7 +8,7 @@
         android:id="@+id/startScreenFragment"
         android:name="com.example.mycocktails.presintation.StartScreenFragment"
         android:label="fragment_start_screen"
-        tools:layout="@layout/fragment_start_screen" >
+        tools:layout="@layout/fragment_start_screen">
         <action
             android:id="@+id/action_startScreenFragment_to_listCocktailsFragment"
             app:destination="@id/listCocktailsFragment"
@@ -24,7 +24,7 @@
         android:id="@+id/listCocktailsFragment"
         android:name="com.example.mycocktails.screen_cocktails.ListCocktailsFragment"
         android:label="fragment_list_cocktails"
-        tools:layout="@layout/fragment_list_cocktails" >
+        tools:layout="@layout/fragment_list_cocktails">
         <action
             android:id="@+id/action_listCocktailsFragment_to_infoCocktailsFragment"
             app:destination="@id/infoCocktailsFragment" />
@@ -35,7 +35,7 @@
     <fragment
         android:id="@+id/addCocktailsFragment"
         android:name="com.example.mycocktails.screen_cocktails.AddCocktailsFragment"
-        android:label="AddCocktailsFragment" >
+        android:label="AddCocktailsFragment">
         <action
             android:id="@+id/action_addCocktailsFragment_to_creatingCocktailFragment"
             app:destination="@id/creatingCocktailFragment" />
@@ -44,11 +44,13 @@
         android:id="@+id/infoCocktailsFragment"
         android:name="com.example.mycocktails.info_cocktails.InfoCocktailsFragment"
         android:label="fragment_info_cocktails"
-        tools:layout="@layout/fragment_info_cocktails" />
+        tools:layout="@layout/fragment_info_cocktails">
+        <argument android:name="name_id" />
+    </fragment>
     <fragment
         android:id="@+id/creatingCocktailFragment"
         android:name="com.example.mycocktails.editing_screen.CreatingCocktailFragment"
-        android:label="CreatingCocktailFragment" >
+        android:label="CreatingCocktailFragment">
         <action
             android:id="@+id/action_creatingCocktailFragment_to_listCocktailsFragment"
             app:destination="@id/listCocktailsFragment"

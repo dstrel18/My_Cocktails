@@ -2,6 +2,7 @@ package com.example.mycocktails.editing_screen
 
 import android.os.Bundle
 import android.os.ParcelFileDescriptor
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -35,12 +36,14 @@ class CreatingCocktailFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        name = binding.titleET.text.toString()
-        val image = null
-        descriptor = binding.descriptionET.toString()
-        recipe = binding.recipeET.toString()
 
         binding.save.setOnClickListener {
+            name = binding.titleET.text.toString()
+            Log.d("tag", "$name")
+            val image = null
+            descriptor = binding.descriptionET.toString()
+            recipe = binding.recipeET.toString()
+
             vm.insertDatabase(name, image, descriptor, recipe)
             findNavController().navigate(R.id.action_creatingCocktailFragment_to_listCocktailsFragment)
         }

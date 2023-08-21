@@ -15,8 +15,6 @@ import javax.inject.Singleton
 @Module
 @InstallIn(SingletonComponent::class)
 object AppModule {
-
-
     @Singleton
     @Provides
     fun provideDatabase(
@@ -24,7 +22,7 @@ object AppModule {
     ): AppDatabase = Room.databaseBuilder(
         context,
         AppDatabase::class.java,
-        "NDatabase"
+        "MyDatabase"
     ).build()
 
     @Singleton
